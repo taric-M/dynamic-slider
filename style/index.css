@@ -20,10 +20,10 @@ body{
     height: 2rem;
     position: relative;
     border-radius: 1rem;
-    background: -webkit-gradient(linear, left top, right top, from(green), color-stop(yellow), to(red));
-    background: -webkit-linear-gradient(left, green, yellow, red);
-    background: -o-linear-gradient(left, green, yellow, red);
-    background: linear-gradient(90deg, green, yellow, red);
+    background: -webkit-gradient(linear, left top, right top, from(green), color-stop(#ff6600), to(red));
+    background: -webkit-linear-gradient(left, green, #ff6600, red);
+    background: -o-linear-gradient(left, green, #ff6600, red);
+    background: linear-gradient(90deg, green, #ff6600, red);
     -webkit-box-shadow: 1px 2px 15px 1px black;
             box-shadow: 1px 2px 15px 1px black;
 }
@@ -33,8 +33,8 @@ body{
     border-radius: 100%;
     line-height: 4rem;
     font-size: 2rem;
+    font-weight: bold;
     text-align: center;
-    color: #3d3d5c;
     background-color: #fff;
     position: absolute;
     left:calc(-2rem);
@@ -42,9 +42,19 @@ body{
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-    -webkit-transition: left 1s ease-in-out;
-    -o-transition: left 1s ease-in-out;
-    transition: left 1s ease-in-out;
+    -webkit-transition: left 1.5s ease-in-out;
+    -o-transition: left 1.5s ease-in-out;
+    transition: left 1.5s ease-in-out;
     -webkit-box-shadow: 0 0 15px #4d79ff;
             box-shadow: 0 0 15px #4d79ff;
+    mix-blend-mode: screen;
+}
+.wrap-text {
+    display: inline-block;
+    -webkit-transition: transform 1.5s ease-in-out;
+    -o-transition: transform 1.5s ease-in-out;
+    transition: transform 1.5s ease-in-out;
+}
+.rotate{
+    transform:scaleX(-1);
 }
